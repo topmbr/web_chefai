@@ -13,7 +13,7 @@ const RecipeForm = () => {
     setError('');
 
     try {
-      const response = await axios.post('https://localhost:7078/api/Recipes', { ingredients });
+      const response = await axios.post('https://localhost:7284/api/Recipes', { ingredients });
       setRecipe(response.data.recipe);
     } catch (error) {
       setError('Error retrieving recipe.');
